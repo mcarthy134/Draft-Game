@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NFL Draft Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="team-selection">
+    <h1>Select Your NFL Team</h1>
+    <select id="teamSelect">
+      <option value="">-- Choose a Team --</option>
+      <option value="49ers">49ers</option>
+      <option value="Bears">Bears</option>
+      <option value="Bengals">Bengals</option>
+      <option value="Bills">Bills</option>
+      <option value="Broncos">Broncos</option>
+      <option value="Browns">Browns</option>
+      <option value="Buccaneers">Buccaneers</option>
+      <option value="Cardinals">Cardinals</option>
+      <option value="Chargers">Chargers</option>
+      <option value="Chiefs">Chiefs</option>
+      <option value="Colts">Colts</option>
+      <option value="Commanders">Commanders</option>
+      <option value="Cowboys">Cowboys</option>
+      <option value="Dolphins">Dolphins</option>
+      <option value="Eagles">Eagles</option>
+      <option value="Falcons">Falcons</option>
+      <option value="Giants">Giants</option>
+      <option value="Jaguars">Jaguars</option>
+      <option value="Jets">Jets</option>
+      <option value="Lions">Lions</option>
+      <option value="Packers">Packers</option>
+      <option value="Panthers">Panthers</option>
+      <option value="Patriots">Patriots</option>
+      <option value="Raiders">Raiders</option>
+      <option value="Rams">Rams</option>
+      <option value="Ravens">Ravens</option>
+      <option value="Saints">Saints</option>
+      <option value="Seahawks">Seahawks</option>
+      <option value="Steelers">Steelers</option>
+      <option value="Texans">Texans</option>
+      <option value="Titans">Titans</option>
+      <option value="Vikings">Vikings</option>
+    </select>
+    <br />
+    <button onclick="startDraft()">Start Draft</button>
+  </div>
+
+  <div id="draft-section" class="hidden">
+    <h2 id="round-status">Round</h2>
+    <h3 id="pick-status">Pick</h3>
+    <div id="player-selection" class="player-list"></div>
+  </div>
+
+  <div id="results" class="hidden">
+    <h2>Your Draft Results</h2>
+    <ul id="user-picks"></ul>
+    <h3 id="grade"></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
